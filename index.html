@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="tr" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayal gerçek olur!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+   <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-200 dark:bg-gray-800 p-4">
+    <div class="flex items-center justify-between">
+      <img src="logo.png" alt="logo" class="w-20 h-14">
+      <div class="hidden lg:flex space-x-8">
+        <a href="#" class="text-blue-500 hover:text-blue-800 font-medium">Ana Sayfa</a>
+        <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Hakkımızda</a>
+        <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Hizmetler</a>
+        <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Projeler</a>
+        <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">İletişim</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" class="p-2 bg-gray-600 dark:bg-gray-100 text-white dark:text-gray-900 rounded">
+          <img src="sun.png" alt="güneş" class="w-8 h-8">
+        </button>
+        <button id="menu-btn" class="lg:hidden text-3xl text-gray-600 dark:text-gray-200">
+          ☰
+        </button>
+      </div>
+    </div>
+    <!-- Mobil Menü -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 lg:hidden bg-gray-100 dark:bg-gray-700 p-4 rounded">
+      <a href="#" class="text-blue-500 hover:text-blue-800 font-medium">Ana Sayfa</a>
+      <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Hakkımızda</a>
+      <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Hizmetler</a>
+      <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">Projeler</a>
+      <a href="#" class="text-gray-500 hover:text-blue-800 dark:text-gray-200">İletişim</a>
+    </div>
+  </nav>
+  <div class="grid grid-cols-1 lg:grid-cols-1 gap-3 justify-items-center">
+    <div class="mt-5 lg:mt-5 p-3">
+      <div class="p-4 flex flex-col items-center text-center">
+        <h1 class="text-4xl font-bold mb-4">
+          Hayalinizdeki iş hedefini 
+          <br>gerçeğe dönüştürün
+        </h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+          İş hedeflerinizi büyütmenize yardımcı oluyoruz
+          <br> hedeflerinizi söyleyin biz ulaştıralım
+        </p>
+        <div class="flex justify-center mt-2 mb-2">
+          <a
+            href="#"
+            class="bg-gradient-to-r from-blue-800 to-blue-600 text-gray-50 rounded-full px-6 py-3 
+            font-medium shadow hover:from-blue-900 hover:to-blue-900 transition">
+            Başla
+          </a>
+        </div>
+        <div class="relative">
+          <img
+            src="foto4.jpg"
+            alt="toplantı"
+            class="max-w-sm lg:max-w-md rounded-2xl mb-4"
+          />
+          <div
+            class="absolute bottom-36 right-64 sm:bottom-36 sm:right-64 md:bottom-36 md:right-64 lg:bottom-48 lg:right-80
+                   h-24 w-44 sm:h-24 sm:w-44 md:h-24 md:w-40 lg:h-24 lg:w-40 
+                   rounded-xl bg-gray-50 dark:bg-gray-800 flex flex-col items-center justify-center shadow-lg">
+            <h1 class="text-sm sm:text-base md:text-lg font-bold text-gray-950 dark:text-white text-center">
+              800+ tamamlandı
+            </h1>
+            <p class="text-xs sm:text-sm md:text-base text-gray-700 dark:text-gray-300 text-center">
+              Harika bir proje
+            </p>
+          </div>
+          <div
+            class="absolute bottom-6 left-80 sm:bottom-6 sm:right-4 md:bottom-6 md:right-4 lg:bottom-8 lg:left-96
+                   h-32 w-24 sm:h-24 sm:w-44 md:h-24 md:w-40 lg:h-36 lg:w-28 
+                   rounded-xl bg-gray-50 dark:bg-gray-800 flex flex-col items-center justify-center shadow-lg">
+            <h1 class="text-sm sm:text-base md:text-lg font-bold text-gray-950 dark:text-white text-center">
+              Bill Adams
+            </h1>
+            <img
+              src="insan1.jpg"
+              alt="kişi"
+              class="w-5 h-5 rounded-full"
+            />
+            <p class="text-[8px] text-gray-700 dark:text-gray-300 text-center">
+              CEO UpTech
+            </p>
+            <p class="text-[10px] text-gray-950 dark:text-gray-200 text-center px-2">
+              Bu ekip gerçekten alanında en iyisi pişman değilim teşekkürler.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto flex flex-col lg:flex-row-reverse justify-center items-center px-4 py-16">
+      <div class="mt-10 lg:mt-30 p-3">
+        <p class="text-blue-700 mb-2 text-center">Hakkımızda</p>
+        <h1 class="text-5xl font-bold text-center text-gray-950  dark:text-gray-100 mb-6">
+         Takım Arkadaşlarımız
+        </h1>
+        <p class="text-lg text-gray-600 text-start dark:text-gray-100 mb-8">
+          İşinizi büyütmek için yaratıcı stratejiler geliştiriyoruz.<br>
+           Hizmetlerimizle gelirinizi artırıyor,<br>
+           içeriğinizi ilgi çekici hale getiriyor ve <br>
+           insanların işinizi fark etmesini sağlıyoruz.
+        </p>
+        <a
+          href="#"
+          class="bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-full px-6 py-3 font-medium shadow hover:from-blue-700 hover:to-blue-500 transition"
+        >
+          Hakkımızda
+        </a>
+        <a
+          href="#"
+          class="bg-gradient-to-r from-white to-white text-blue-800 rounded-full px-6 py-3 font-medium shadow hover:from-blue-200 hover:to-blue-300 transition"
+        >
+          Hikayemiz
+        </a>
+      </div>
+      <div class="lg:w-1/2 mt-10 lg:mt-30 flex justify-center">
+        <div
+          class="rounded-full flex shadow-lg justify-center"
+        >
+          <img
+            src="foto6.jpg"
+            alt="toplantı Görseli"
+            class="max-w-sm lg:max-w-md rounded-xl"
+          />
+        </div>
+      </div>
+     </div>
+      <div
+      class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-16"
+     >
+      <div class="mt-20 lg:mt-30 p-6">
+        <p class="text-blue-700 mb-4">Hizmetlerimiz</p>
+        <h1 class="text-5xl font-bold text-gray-950 dark:text-gray-100 mb-6">
+          Mükemmel ve Hızlı Hareket
+        </h1>
+        <p class="text-xl text-gray-800 dark:text-gray-100 mb-6">
+          İşinizi büyütmek için yaratıcı stratejiler oluşturuyor, gelirinizi artırıyor, 
+          <br>içeriğinizi ilgi çekici hale getiriyor ve insanların işinizi fark etmesini sağlıyoruz.
+        </p>
+       <div class="flex justify-end">
+        <a
+        href="#"
+        class="bg-gradient-to-r text-blue-700 dark:text-blue-300 rounded-full px-6 py-3 font-medium shadow transition">Daha Fazla -></a>
+</div>
+</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-[400px]">
+    <div class="bg-white dark:bg-gray-900 shadow-md rounded-lg flex flex-col items-center justify-center aspect-square p-6">
+      <div class="bg-blue-700 text-center rounded-full w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">desktop_windows</span>
+      </div>
+      <h2 class="text-xl font-bold text-gray-800 dark:text-white text-center mb-2">Sosyal Medya Yönetimi</h2>
+    </div>
+    <div class="bg-white dark:bg-gray-900 shadow-md rounded-lg flex flex-col items-center justify-center aspect-square p-6">
+      <div class="text-center rounded-full bg-red-600 w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">settings</span>
+      </div>
+      <h2 class="text-xl font-bold dark:text-white text-gray-800 mb-2">Arama Motoru Optimizasyonu</h2>
+    </div>
+    <div class="bg-white dark:bg-gray-900 shadow-md rounded-lg flex flex-col items-center justify-center aspect-square p-6">
+      <div class="bg-yellow-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+        <span class="material-symbols-outlined">stylus_fountain_pen</span>
+      </div>
+      <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Tasarım</h2>
+    </div>
+    <div class="bg-white dark:bg-gray-900 shadow-md rounded-lg flex flex-col items-center justify-center aspect-square p-6">
+      <div class="bg-green-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">tv_gen</span>
+      </div>
+      <h2 class="text-xl font-bold dark:text-white text-gray-800 mb-2">Reklam</h2>
+    </div>
+  </div>
+  </div>
+    <div class="mt-5 lg:mt-5 p-3">
+      <div class="p-4 flex flex-col items-center text-center">
+        <p class="text-blue-700 mb-2 text-center">Portföyümüz</p>
+        <h1 class="text-4xl font-bold mb-4">
+          Ne Yapıyoruz?
+        </h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+          Şimdiye kadar tamamladığımız tüm projeler kanıtlanmış olup,
+          <br> işimizi kullanan müşterilerimizin daha rahat çalışmasına yardımcı olmaktadır.
+        </p>
+      <div class="lg:w-1/2 mt-10 lg:mt-30 flex justify-center">
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+    <div class="relative">
+    <img
+      src="telefon1.jpg"
+      alt="toplantı Görseli"
+      class="w-36 h-36 lg:w-52 lg:h-52 object-cover rounded-xl aspect-square"
+    />
+    <p class="absolute font-bold bottom-2 left-1/2 transform -translate-x-1/2 text-white text-sm text-center px-2 rounded">
+    Tasarım Byte Uygulaması
+  </p>
+    </div>
+  <div class="relative">
+    <img
+      src="hedef.jpg"
+      alt="toplantı Görseli"
+      class="w-40 h-40 lg:w-60 lg:h-60 object-cover rounded-xl aspect-square"
+    />
+    <p class="absolute font-bold bottom-2 left-1/2 transform -translate-x-1/2 text-white text-sm text-center px-2 rounded">
+    Bulut Uygulaması
+  </p>
+  </div>
+  <div class="relative">
+    <img
+      src="telefon2.jpg"
+      alt="toplantı Görseli"
+      class="w-36 h-36 lg:w-52 lg:h-52 object-cover rounded-xl aspect-square"
+    />
+    <p class="absolute font-bold bottom-2 left-1/2 transform -translate-x-1/2 text-white text-sm text-center px-2 rounded">
+    Mobilya Tasarım Uygulaması
+  </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-2 mb-2">
+  <a href="#" class="bg-gradient-to-r from-white to-white text-blue-600 rounded-full px-6 py-3  font-medium shadow hover:from-blue-200 hover:to-blue-300 transition"> Tüm Portföyü Gör</a>
+</div>
+<div class="mt-5 lg:mt-10 p-3">
+  <div class="p-4 flex flex-col items-center text-center">
+    <p class="text-blue-700 mb-2 text-center">Yorumlar</p>
+    <h1 class="text-4xl font-bold mb-6">
+      İnsanlar Hakkımızda Ne Diyor?
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
+      <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-4 flex flex-col items-start w-72">
+        <div class="flex items-center mb-2">
+          <img src="insan2.jpg" alt="kadın" class="w-16 h-16 rounded-full mr-3">
+          <div>
+            <h3 class="font-bold text-gray-900 dark:text-white">Angel Rose</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">CEO</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300 text-start text-sm">
+          Sosyal medya varlığımızı tamamen yenilediler! Stratejileri sadece takipçi sayısını değil,
+          gerçek ve anlamlı bir topluluk oluşturmamızı sağladı. Gerçekten iş hedeflerimizi gerçeğe dönüştürdüler.
+        </p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-4 flex flex-col items-start w-72">
+        <div class="flex items-center mb-2">
+          <img src="insan1.jpg" alt="erkek" class="w-16 h-16 rounded-full mr-3">
+          <div>
+            <h3 class="font-bold text-gray-900 dark:text-white">John Smith</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Founder ABC</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300 text-start text-sm">
+          İşbirliğimiz inanılmaz derecede verimliydi. Sadece bir hizmet satın almadık, bir ortak edindik.
+           'En yüksek seviyede mükemmellik' taahhüdlerini ciddiye alıyorlar. 
+        </p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-4 flex flex-col items-start w-72">
+        <div class="flex items-center mb-2">
+          <img src="insan2.jpg" alt="kadın" class="w-16 h-16 rounded-full mr-3">
+          <div>
+            <h3 class="font-bold text-gray-900 dark:text-white">Angel Rose</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">CEO</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300 text-start text-sm">
+         Sadece bir proje için başladığımız çalışma, tüm dijital pazarlama stratejimizi kapsayacak şekilde genişledi. 
+         Ekip, işimizin ihtiyaçlarını anlayıp en iyi çözümleri sunmakta çok başarılı.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-16">
+  <!-- Yazı Kısmı -->
+  <div class="flex-1 p-6">
+    <h1 class="text-5xl font-bold text-gray-950 dark:text-gray-100 mb-6">
+      Bizimle İlginç Bir İşbirliği mi?
+    </h1>
+    <p class="text-xl text-gray-800 dark:text-gray-100 mb-6">
+      İş hedefinize ulaşmanıza yardımcı oluyoruz.
+    </p>
+    <div class="flex justify-center lg:justify-start">
+      <a
+        href="#"
+        class="bg-gradient-to-r text-gray-100 bg-blue-800 dark:text-gray-100 rounded-full px-6 py-3 font-medium shadow transition"
+      >
+        Başla
+      </a>
+    </div>
+  </div>
+  <div class="flex-1 flex justify-center mb-16 lg:mb-28 lg:mt-0">
+    <div class="relative w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60">
+      <img
+        src="foto2.jpg"
+        alt="toplantı"
+        class="w-full h-full object-cover rounded-2xl"
+      />
+      <img
+        src="foto1.jpg"
+        alt="toplantı"
+        class="absolute top-20 right-10 sm:top-24 sm:right-20 md:top-32 md:right-40 w-full h-full object-cover rounded-2xl opacity-90"
+      />
+    </div>
+  </div>
+</div>
+     <footer class="bg-gray-600 dark:bg-gray-800 text-gray-100 w-full">
+  <div class="max-w-7xl mx-auto py-14 px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-semibold text-gray-50 mb-2">Şartlar ve Politikalar</h3>
+        <p class="text-gray-50 leading-relaxed"> 
+          Hizmet Şartları<br> Gizlilik Politikası
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-50 mb-2">Şirket</h3>
+        <p class="text-gray-50 leading-relaxed"> 
+          Ana Sayfa<br> Hakkımızda<br> İletişim
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-50 mb-2">İletişim</h3>
+        <p class="text-gray-50 leading-relaxed"> 
+          (+62) 893912392190 <br> agecnycr@gmail.com
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-50 mb-2">Konum</h3>
+        <p class="text-gray-50 italic leading-relaxed"> 
+      PT Osiris Real Estate Internasional<br> Jl. KH. Wahid Hasyim Kel No.10D<br> Jakarta, Indonesia<br> team@OsirisRealEstate.com
+        </p>
+      </div>
+    </div>
+    <div class="flex items-center justify-center mt-4 gap-4">
+      <div class="bg-neutral-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">tooltip</span>
+      </div>
+      <div class="bg-neutral-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+        <span class="material-symbols-outlined">mail</span>
+      </div>
+      <div class="bg-neutral-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+        <span class="material-symbols-outlined">phone_enabled</span>
+      </div>
+      <div class="bg-neutral-400 text-center rounded-full w-10 h-10 flex items-center justify-center">
+      <span class="material-symbols-outlined">location_on</span>
+    </div>
+  </div>
+    <p class="text-gray-50 text-center mt-10 border-t border-gray-400 pt-6"> 
+      Copyright @ 2022 Agency Creative. All Right Reserved    </p>
+  </div>
+  </div>
+</footer>
+
+  <script>
+    // Dark mode aç/kapat
+    const toggle = document.getElementById('dark-toggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+    });
+
+    // Mobil menü aç/kapat
+    const btn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
